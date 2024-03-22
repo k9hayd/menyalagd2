@@ -235,6 +235,35 @@ Shopify.routes.root = "/";</script>
   background-color: rgb(222, 222, 222);
   box-sizing: border-box;
 }
+.n-columns-2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-weight: 700;
+	}
+	.n-columns-2 a {
+    text-align: center;
+	}
+	.login, .rtp, .register {
+    color: #fff;
+    padding: 13px 10px;
+	}
+	.login, .login-button {
+    background: linear-gradient(to bottom,#009adf 0,#5c797d 100%);
+	}
+	.register, .register-button {
+    background: linear-gradient(to bottom,#002a3d 0,#5c797d 100%);
+	}
+	.rtp, .rtp-button {
+    background: linear-gradient(to bottom,#f1b500 0,#67410a 100%);
+	}
+	.kedip {
+	animation: blinker 1s linear infinite;
+	}
+	@keyframes blinker {
+	50% { opacity: 0;
+	}
+	}
+
 </style>
 <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 
@@ -1464,6 +1493,11 @@ for (var attr in meta) {
     "url": "https:\/\/ac08f7-c9.myshopify.com"
   }
 </script>
+</div>
+<div class="n-columns-2">
+<a href="rebrand.ly/gading4d-login" rel="nofollow noreferrer" class="login" target="_blank">LOGIN</a>
+<a href="rebrand.ly/gading4d-login" rel="nofollow noreferrer" class="register" target="_blank"><span class="kedip">DAFTAR</span></a>
+<a href="rebrand.ly/gading4d-login" rel="nofollow noreferrer" class="rtp" target="_blank">SLOT GACOR</a>
 </div>
 <!-- END sections: header-group -->
 
